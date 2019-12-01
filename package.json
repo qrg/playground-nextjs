@@ -5,9 +5,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "next",
     "build": "next build",
-    "start": "next start -p $PORT"
+    "export": "next export"
   },
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0",
