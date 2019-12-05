@@ -5,10 +5,12 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "preexport": "yarn build",
+    "export": "next export",
+    "serve": "serve out",
     "type-check": "tsc"
   },
   "dependencies": {
-    "isomorphic-unfetch": "3.0.0",
     "next": "latest",
     "react": "^16.10.1",
     "react-dom": "^16.10.1"
@@ -17,6 +19,7 @@
     "@types/node": "^12.7.8",
     "@types/react": "^16.9.3",
     "@types/react-dom": "^16.9.1",
+    "serve": "^11.2.0",
     "typescript": "3.6.3"
   },
   "license": "ISC"
