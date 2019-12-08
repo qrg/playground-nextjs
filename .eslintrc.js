@@ -63,30 +63,24 @@ module.exports = {
   extends: configs,
   parserOptions,
   rules,
+  settings: {
+    react: {
+      version: 'detect'
+    }
+  },
   overrides: [
     {
-      files: ['./*.js'],
+      files: ['**/*.js'],
       env: {
         node: true,
         browser: false
       }
     },
     {
-      files: ['src/**/*.ts', 'src/**/*.tsx'],
-      env: {
-        node: false,
-        browser: true
-      },
-      parser: '@typescript-eslint/parser',
-      parserOptions: parserOptionsTs,
-      extends: configsTs,
-      rules: rulesTs
-    },
-    {
-      files: ['tasks/**/*.ts'],
+      files: ['**/*.ts', '**/*.tsx'],
       env: {
         node: true,
-        browser: false
+        browser: true
       },
       parser: '@typescript-eslint/parser',
       parserOptions: parserOptionsTs,
