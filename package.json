@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
+    "start": "yarn dev",
     "preexport": "yarn build",
     "export": "next export",
     "serve": "serve out",
