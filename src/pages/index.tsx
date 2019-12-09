@@ -1,5 +1,20 @@
 import React from 'react';
+import Link from 'next/link';
+import { NextPage } from 'next';
 
-const Index: React.FC = () => <div>Hello world!</div>;
+import Layout from '../components/Layout';
 
-export default Index;
+const TITLE = 'Playground Next.js';
+
+const IndexPage: NextPage = () => (
+  <Layout title={TITLE}>
+    <h1>Home</h1>
+    <p>
+      <Link href="/about">
+        <a>About</a>
+      </Link>
+    </p>
+  </Layout>
+);
+
+export default IndexPage;
