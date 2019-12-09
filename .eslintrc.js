@@ -37,6 +37,13 @@ const rules = {
       argsIgnorePattern: '^_',
       varsIgnorePattern: '^_'
     }
+  ],
+  'jsx-a11y/anchor-is-valid': [
+    'error',
+    {
+      components: ['Link'],
+      aspects: ['invalidHref', 'preferButton']
+    }
   ]
 };
 
