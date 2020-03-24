@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "next": "^9.1.7",
-    "react": "^16.10.1",
-    "react-dom": "^16.10.1"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^9.3.1",
