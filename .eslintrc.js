@@ -22,7 +22,6 @@ const parserOptionsTs = {
 };
 
 const rules = {
-  'prettier/prettier': 'error',
   'no-console': 'warn',
   'no-var': 'error',
   'prefer-const': 'error',
@@ -66,7 +65,7 @@ const rulesTs = {
 
 module.exports = {
   root: true,
-  plugins: ['@typescript-eslint', 'prettier', 'jsx-a11y'],
+  plugins: ['@typescript-eslint', 'jsx-a11y'],
   extends: configs,
   parserOptions,
   rules,
