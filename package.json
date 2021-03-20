@@ -12,7 +12,6 @@
     "lint": "yarn lint:prettier && yarn lint:eslint",
     "lint:eslint": "eslint '**/*.{js,jsx,ts,tsx}'",
     "lint:prettier": "prettier --check '**/*.{js,jsx,ts,tsx,md,yml,yaml,html,json}'",
-    "watch-lint": "esw -w --color '**/*.{js,jsx,ts,tsx}'",
     "analyze": "cross-env ANALYZE=true next build"
   },
   "dependencies": {
