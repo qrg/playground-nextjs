@@ -7,9 +7,7 @@ const configsTs = [
   'plugin:@typescript-eslint/recommended-requiring-type-checking',
   'plugin:react/recommended',
   'plugin:jsx-a11y/recommended',
-  'prettier',
-  'prettier/react',
-  'prettier/@typescript-eslint'
+  'prettier'
 ];
 
 const parserOptions = {
