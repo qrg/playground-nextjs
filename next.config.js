@@ -3,6 +3,9 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 });
 
 const nextConfig = {
+  future: {
+    webpack5: true
+  },
   async exportPathMap() {
     return {
       '/': { page: '/' }
