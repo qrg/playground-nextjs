@@ -12,7 +12,7 @@
     "serve": "yarn export && serve out",
     "type-check": "tsc",
     "format": "prettier --write '**/*.{js,jsx,ts,tsx,md}'",
-    "test": "yarn lint",
+    "test": "echo \"no test specified\" && exit 0",
     "lint": "yarn lint:prettier && yarn lint:eslint",
     "lint:eslint": "eslint '**/*.{js,jsx,ts,tsx}'",
     "lint:prettier": "prettier --check '**/*.{js,jsx,ts,tsx,md,yml,yaml,html,json}'",
