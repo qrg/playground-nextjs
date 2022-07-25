@@ -1,5 +1,9 @@
 const base = {
   root: true,
+  env: {
+    node: true,
+    browser: true,
+  },
   plugins: [],
   extends: [
     'eslint:recommended',
@@ -12,6 +16,7 @@ const base = {
     'next/core-web-vitals',
   ],
   rules: {
+    'import/prefer-default-export': 'off',
     'import/order': [
       'error',
       {
@@ -46,6 +51,13 @@ const base = {
     'react/function-component-definition': [
       'error',
       { namedComponents: 'arrow-function' },
+    ],
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: ['Link'],
+        aspects: ['invalidHref', 'preferButton'],
+      },
     ],
   },
 };
