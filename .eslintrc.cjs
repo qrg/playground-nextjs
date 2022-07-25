@@ -9,7 +9,7 @@ const base = {
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
     'airbnb',
-    'next/core-web-vitals'
+    'next/core-web-vitals',
   ],
   rules: {
     'import/order': [
@@ -22,50 +22,50 @@ const base = {
           'sibling',
           'index',
           'object',
-          'type'
+          'type',
         ],
         pathGroups: [
           {
             pattern: '{react,react-dom/**,react-router-dom}',
             group: 'builtin',
-            position: 'before'
+            position: 'before',
           },
           {
             pattern: '@src/**',
             group: 'parent',
-            position: 'before'
-          }
+            position: 'before',
+          },
         ],
         pathGroupsExcludedImportTypes: ['builtin'],
         alphabetize: {
-          order: 'asc'
+          order: 'asc',
         },
-        'newlines-between': 'always'
-      }
+        'newlines-between': 'always',
+      },
     ],
     'react/function-component-definition': [
       'error',
-      { namedComponents: 'arrow-function' }
-    ]
-  }
+      { namedComponents: 'arrow-function' },
+    ],
+  },
 };
 
 const tsConfig = {
   files: ['**/*.ts', '**/*.tsx'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: './tsconfig.json'
+    project: './tsconfig.json',
   },
   plugins: [...base.plugins, '@typescript-eslint'],
   extends: [
     ...base.extends,
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'airbnb-typescript'
+    'airbnb-typescript',
   ],
   rules: {
-    ...base.rules
-  }
+    ...base.rules,
+  },
 };
 
 module.exports = {
@@ -74,7 +74,7 @@ module.exports = {
   overrides: [
     {
       ...tsConfig,
-      extends: [...tsConfig.extends, 'prettier']
-    }
-  ]
+      extends: [...tsConfig.extends, 'prettier'],
+    },
+  ],
 };
