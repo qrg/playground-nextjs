@@ -23,6 +23,7 @@ const base = {
         groups: [
           'builtin',
           'external',
+          'internal',
           'parent',
           'sibling',
           'index',
