@@ -1,19 +1,29 @@
-import { red } from '@mui/material/colors';
 import { createTheme } from '@mui/material/styles';
 
-// Create a theme instance.
-const theme = createTheme({
+import type { ThemeOptions } from '@mui/material/styles';
+
+const themeOptions: ThemeOptions = {
   palette: {
     primary: {
-      main: '#556cd6',
+      main: '#190c5c',
     },
     secondary: {
-      main: '#19857b',
+      main: '#ea5a5d',
     },
-    error: {
-      main: red.A400,
+    text: {
+      primary: 'rgba(80,56,56,1)',
+      secondary: 'rgba(80,56,56,0.54)',
+      disabled: 'rgba(80,56,56,0.38)',
     },
+    background: {
+      default: '#f9f4f4',
+      paper: '#fdfafa',
+    },
+    divider: 'rgba(55,40,40,0.07)',
   },
-});
+};
+
+// Create a theme instance.
+const theme = createTheme(themeOptions);
 
 export default theme;
