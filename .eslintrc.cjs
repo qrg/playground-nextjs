@@ -16,7 +16,12 @@ const base = {
     'next/core-web-vitals',
   ],
   rules: {
+    // off
     'import/prefer-default-export': 'off',
+    'react/require-default-props': 'off',
+    'react/display-name': 'off',
+
+    // error
     'import/order': [
       'error',
       {
