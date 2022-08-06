@@ -66,6 +66,22 @@ const base = {
       },
     ],
   },
+  overrides: [
+    // Only uses Testing Library lint rules in test files
+    {
+      files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+      plugins: ['jest', 'testing-library', 'jest-dom'],
+      extends: [
+        'plugin:jest/recommended',
+        'plugin:jest-dom/recommended',
+        'plugin:testing-library/dom',
+        'plugin:testing-library/react',
+      ],
+      env: {
+        'jest/globals': true,
+      },
+    },
+  ],
 };
 
 const tsConfig = {
