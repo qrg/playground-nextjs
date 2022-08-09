@@ -105,6 +105,18 @@ const tsConfig = {
         prefer: 'type-imports',
       },
     ],
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: 'variable',
+        format: [
+          'strictCamelCase',
+          'StrictPascalCase',
+          'snake_case',
+          'UPPER_CASE',
+        ],
+      },
+    ],
   },
 };
 

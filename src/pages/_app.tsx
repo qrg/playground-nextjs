@@ -5,6 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 import Head from 'next/head';
 
+import Layout from '../features/layout';
 import createEmotionCache from '../styles/createEmotionCache';
 import theme from '../styles/theme';
 import '../styles/globals.css';
@@ -33,9 +34,11 @@ const MyApp = ({
       <meta name="viewport" content="initial-scale=1, width=device-width" />
     </Head>
     <ThemeProvider theme={theme}>
-      <CssBaseline />
-      {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-      <Component {...pageProps} />
+      <Layout>
+        <CssBaseline />
+        {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+        <Component {...pageProps} />
+      </Layout>
     </ThemeProvider>
   </CacheProvider>
 );

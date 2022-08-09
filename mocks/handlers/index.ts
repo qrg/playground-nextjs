@@ -1,9 +1,12 @@
 import { rest } from 'msw';
 
-import { Book, Review } from '../types';
+import { postsHandler } from './posts-handler';
 
-const HOSTNAME = 'https://my.backend';
+import type { Book, Review } from '../../types';
+
+export const HOSTNAME = 'https://my.backend';
 export const handlers = [
+  postsHandler,
   rest.get(`${HOSTNAME}/book`, (req, res, ctx) =>
     res(
       ctx.json({

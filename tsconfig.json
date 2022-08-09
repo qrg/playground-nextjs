@@ -16,6 +16,6 @@
     "incremental": true,
     "noErrorTruncation": true
   },
-  "include": ["next-env.d.ts", "src", "types", "mocks"],
+  "include": ["next-env.d.ts", "src", "mocks", "types", "const"],
   "exclude": ["node_modules"]
 }
