@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
 
-import { API_ENDPOINT } from '../../../const';
+import { API_ENDPOINT } from '../../../configs';
 import { Post } from '../../features/post';
 
 import type { Post as PostType } from '../../../types';

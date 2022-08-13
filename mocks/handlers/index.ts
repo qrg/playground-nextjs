@@ -1,13 +1,14 @@
 import { rest } from 'msw';
 
+import { API_ENDPOINT } from '../../configs';
+
 import { postsHandler } from './posts-handler';
 
 import type { Book, Review } from '../../types';
 
-export const HOSTNAME = 'https://my.backend';
 export const handlers = [
   postsHandler,
-  rest.get(`${HOSTNAME}/book`, (req, res, ctx) =>
+  rest.get(`${API_ENDPOINT}/book`, (req, res, ctx) =>
     res(
       ctx.json({
         title: 'Lord of the Rings',

@@ -1,6 +1,6 @@
 import { rest } from 'msw';
 
-import { API_ENDPOINT } from '../../const';
+import { API_ENDPOINT } from '../../configs';
 
 import type { Post, User } from '../../types';
 
