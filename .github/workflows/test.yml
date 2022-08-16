@@ -7,13 +7,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: '7.9.0'
+          run_install: false
       - name: Use Node.js v16.17.0
         uses: actions/setup-node@v3
         with:
           node-version: '16.17.0'
+          cache: 'pnpm'
       - name: Install
-        run: yarn install
+        run: pnpm install --frozen-lockfile
       - name: Lint
-        run: yarn lint
+        run: pnpm lint
       - name: Test
-        run: yarn test:ci
+        run: pnpm test:ci
