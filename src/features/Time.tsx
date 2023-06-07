@@ -62,7 +62,7 @@ export const Time = ({ datetime }: Props) => {
   const text = getDisplayText(dt, now);
   return (
     <Typography variant="caption">
-      <time dateTime={isoString}>{text}</time>
+      {isoString ? <time dateTime={isoString}>{text}</time> : 'unknown'}
     </Typography>
   );
 };
