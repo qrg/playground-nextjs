@@ -43,6 +43,9 @@ devDependencies:
   '@babel/core':
     specifier: ^7.22.1
     version: 7.22.1
+  '@jest/globals':
+    specifier: 29.5.0
+    version: 29.5.0
   '@testing-library/dom':
     specifier: ^9.3.0
     version: 9.3.0
