@@ -16,6 +16,13 @@
     "incremental": true,
     "noErrorTruncation": true
   },
-  "include": ["next-env.d.ts", "src", "mocks", "types", "const"],
+  "include": [
+    "next-env.d.ts",
+    "src",
+    "mocks",
+    "types",
+    "const",
+    "./jest.setup.ts" // https://github.com/testing-library/jest-dom/blob/v5.16.5/README.md#with-typescript
+  ],
   "exclude": ["node_modules"]
 }
