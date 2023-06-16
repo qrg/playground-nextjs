@@ -41,7 +41,7 @@ dependencies:
 
 devDependencies:
   '@babel/core':
-    specifier: ^7.22.1
+    specifier: ^7.22.5
     version: 7.22.5
   '@jest/globals':
     specifier: 29.5.0
