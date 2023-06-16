@@ -25,17 +25,13 @@ const Home: NextPage = () => (
       </p>
 
       <div className={styles.grid}>
-        <Link href="/about">
-          <a className={styles.card}>
-            <h2>About &rarr;</h2>
-            <p>MUI v5 example</p>
-          </a>
+        <Link href="/about" className={styles.card}>
+          <h2>About &rarr;</h2>
+          <p>MUI v5 example</p>
         </Link>
-        <Link href="/mock-examples">
-          <a className={styles.card}>
-            <h2>Mock Examples &rarr;</h2>
-            <p>MSW mock examples.</p>
-          </a>
+        <Link href="/mock-examples" className={styles.card}>
+          <h2>Mock Examples &rarr;</h2>
+          <p>MSW mock examples.</p>
         </Link>
       </div>
     </main>
