@@ -63,7 +63,7 @@
     "jest-environment-jsdom": "^29.5.0",
     "msw": "^1.2.2",
     "prettier": "^2.8.8",
-    "typescript": "^5.1.5"
+    "typescript": "^5.1.6"
   },
   "msw": {
     "workerDirectory": "public"
