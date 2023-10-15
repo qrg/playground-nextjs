@@ -2,7 +2,7 @@
   "name": "playground-nextjs-ts",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@8.9.0",
+  "packageManager": "pnpm@8.9.1",
   "engines": {
     "node": "18.18.2"
   },
