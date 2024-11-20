@@ -113,8 +113,8 @@ devDependencies:
     specifier: ^4.6.0
     version: 4.6.0(eslint@8.57.1)
   eslint-plugin-testing-library:
-    specifier: ^5.11.1
-    version: 5.11.1(eslint@8.57.1)(typescript@5.4.5)
+    specifier: ^6.5.0
+    version: 6.5.0(eslint@8.57.1)(typescript@5.4.5)
   jest:
     specifier: ^29.7.0
     version: 29.7.0(@types/node@18.19.61)
@@ -3155,11 +3155,11 @@ packages:
       string.prototype.matchall: 4.0.10
     dev: true
 
-  /eslint-plugin-testing-library@5.11.1(eslint@8.57.1)(typescript@5.4.5):
-    resolution: {integrity: sha512-5eX9e1Kc2PqVRed3taaLnAAqPZGEX75C+M/rXzUAI3wIg/ZxzUm1OVAwfe/O+vE+6YXOLetSe9g5GKD2ecXipw==}
+  /eslint-plugin-testing-library@6.5.0(eslint@8.57.1)(typescript@5.4.5):
+    resolution: {integrity: sha512-Ls5TUfLm5/snocMAOlofSOJxNN0aKqwTlco7CrNtMjkTdQlkpSMaeTCDHCuXfzrI97xcx2rSCNeKeJjtpkNC1w==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0, npm: '>=6'}
     peerDependencies:
-      eslint: ^7.5.0 || ^8.0.0
+      eslint: ^7.5.0 || ^8.0.0 || ^9.0.0
     dependencies:
       '@typescript-eslint/utils': 5.62.0(eslint@8.57.1)(typescript@5.4.5)
       eslint: 8.57.1
