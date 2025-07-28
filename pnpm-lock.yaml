@@ -27,8 +27,8 @@ dependencies:
     specifier: ^1.2.1
     version: 1.2.1
   luxon:
-    specifier: ^3.5.0
-    version: 3.5.0
+    specifier: ^3.7.1
+    version: 3.7.1
   next:
     specifier: 14.2.30
     version: 14.2.30(@babel/core@7.28.0)(react-dom@18.3.1)(react@18.3.1)
@@ -59,8 +59,8 @@ devDependencies:
     specifier: ^14.6.1
     version: 14.6.1(@testing-library/dom@9.3.4)
   '@types/luxon':
-    specifier: ^3.4.2
-    version: 3.4.2
+    specifier: ^3.6.2
+    version: 3.6.2
   '@types/node':
     specifier: 18.19.120
     version: 18.19.120
@@ -1481,8 +1481,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/luxon@3.4.2:
-    resolution: {integrity: sha512-TifLZlFudklWlMBfhubvgqTXRzLDI5pCbGa4P8a3wPyUQSW+1xQ5eDsreP9DWHX3tjq1ke96uYG/nwundroWcA==}
+  /@types/luxon@3.6.2:
+    resolution: {integrity: sha512-R/BdP7OxEMc44l2Ex5lSXHoIXTB2JLNa3y2QISIbr58U/YcsffyQrYW//hZSdrfxrjRZj3GcUoxMPGdO8gSYuw==}
     dev: true
 
   /@types/ms@0.7.33:
@@ -4909,8 +4909,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /luxon@3.5.0:
-    resolution: {integrity: sha512-rh+Zjr6DNfUYR3bPwJEnuwDdqMbxZW7LOQfUN4B54+Cl+0o5zaU9RJ6bcidfDtC1cWCZXQ+nvX8bf6bAji37QQ==}
+  /luxon@3.7.1:
+    resolution: {integrity: sha512-RkRWjA926cTvz5rAb1BqyWkKbbjzCGchDUIKMCUvNi17j6f6j8uHGDV82Aqcqtzd+icoYpELmG3ksgGiFNNcNg==}
     engines: {node: '>=12'}
     dev: false
 
