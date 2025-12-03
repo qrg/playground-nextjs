@@ -44,7 +44,7 @@
     "@types/node": "18.19.130",
     "@types/react": "18.3.27",
     "@types/react-dom": "18.3.7",
-    "@types/testing-library__jest-dom": "^5.14.9",
+    "@types/testing-library__jest-dom": "^6.0.0",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
     "eslint": "^8.57.1",
